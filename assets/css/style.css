@@ -1,0 +1,133 @@
+:root{
+    --bs-success-rgb:16, 216, 118;
+    --bs-primary-rgb: 30, 116, 253;
+    --bs-warning-rgb: 254, 148, 49;
+    --bg-gray: #EEEEEE;
+    --text-gray: #adb5bd;
+    --bg-active-link: #D2E3FF;
+    --text-gray-888: #888;
+    
+    --theme-color: #05f;
+    --theme-color-rgb: 33,150,243;
+    --theme-color-shade: #09f;
+    --theme-color-tint: #1E74FD;
+
+}
+
+@font-face {
+    font-family: fredokaOne;
+    src: url('../fonts/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.fredoka-font {
+    font-family: fredokaOne;
+}
+body {
+    font-family: montserrat ;
+}
+.bg-gray {
+    background-color: var(--bg-gray);
+}
+.text-gray {
+    color: var(--text-gray);
+}
+.text-gray-888 {
+    color: var(--text-gray-888);
+}
+
+/* Animations */
+@keyframes infiniteRotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.infinite-rotate {
+    animation: 4s linear infinite infiniteRotate;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.shadow-xss {
+    box-shadow: 0 8px 30px rgba(0,0,0,.05)!important;
+}
+.w-35{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.bg-blue-gradiant {
+    background: linear-gradient(to right,#0575e6,#021b79)!important;
+}
+.bg-primary-gradiant {
+    background: linear-gradient(135deg,var(--theme-color),var(--theme-color-shade))!important;
+}
+.bg-red-gradiant {
+    background: linear-gradient(to right,#e44d26,#f16529)!important;
+}
+.bg-gold-gradiant {
+    background: linear-gradient(to right,#f2994a,#f2c94c)!important;
+}
+.bg-mini-gradiant {
+    background: linear-gradient(to right,#ee0979,#ff6a00)!important;
+}
+/* style scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+.sidebar ,
+.chat-contacts{
+    width: 260px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-content{
+    padding-left: 260px;
+    padding-right: 260px;
+    transition: .5s;
+}
+.main-content.active-chat{
+    padding-right: 0 !important;
+}
+
+.chat-contacts{
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+.chat-contacts.active{
+    right: -260px;
+}
+
+/* main content */
+    /* right side  */
+
+.rounded-xxl {
+    border-radius: 15px !important;
+}
+.font-xss{
+    font-size: 12px;
+}
+.font-xs{
+    font-size: 14px;
+}
+.fw-600{
+    font-weight: 600;
+}
