@@ -131,3 +131,7 @@ a{
 .fw-600{
     font-weight: 600;
 }
+
+.w20 {
+    width: 20px !important;
+}
