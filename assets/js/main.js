@@ -44,3 +44,12 @@ $(window).on('resize', function(){
         $('.main-content').css({'padding-right': 0 , 'padding-left': 0})
     }
 })
+
+
+// owl carousel
+
+$('.owl-carousel.stories-carousel').owlCarousel({
+    dots : false,
+    margin: 10,
+    stagePadding:10
+});
