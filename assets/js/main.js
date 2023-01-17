@@ -48,7 +48,7 @@ $(window).on('resize', function(){
 
 // owl carousel
 
-$('.owl-carousel.stories-carousel').owlCarousel({
+$('.owl-carousel').owlCarousel({
     dots : false,
     margin: 10,
     stagePadding:10
